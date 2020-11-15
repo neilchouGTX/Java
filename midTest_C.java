@@ -37,17 +37,10 @@ public class Main{
             else
                 System.out.println("Just Line!");
         }
-
     }
 }
 class Point{
     double x1,x2,y1,y2;
-    Point(){
-        x1 = 0;
-        x2 = 0;
-        y1 = 0;
-        y2 = 0;
-    }
     Point(double x1,double y1, double x2, double y2){
         this.x1 = x1;
         this.x2 = x2;
@@ -62,14 +55,6 @@ class Point{
 class Triangle{
     double x1,x2,y1,y2,x3,y3;
     double s,a,b,c;
-    Triangle(){
-        x1 = 0;
-        x2 = 0;
-        y1 = 0;
-        y2 = 0;
-        x3 = 0;
-        y3 = 0;
-    }
     Triangle(double x1,double y1, double x2, double y2, double x3, double y3){
         this.x1 = x1;
         this.x2 = x2;
