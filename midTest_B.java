@@ -132,28 +132,21 @@ public class Main{
                 sym[countS]=stt.nextToken().charAt(0);
             }
             if(ori.charAt(0) == '-'){
-                //double temp = (Double.valueOf(num[0]));
-               // System.out.println("-" + temp);
                 System.out.printf("-%.1f\n",Double.valueOf(num[0]));
             }
             else if(countN==2){
                 BigDecimal num1 = new BigDecimal(num[0]);
                 BigDecimal num2 = new BigDecimal(num[1]);
                 BigDecimal num3 = new BigDecimal(num[2]);
-                //System.out.print(num1.doubleValue() + " " +  sym[0]+ " " + num2.doubleValue() + " " +  sym[1]+ " " +num3.doubleValue()  + " = ");
                 System.out.printf("%.1f %c %.1f %c %.1f = %.1f\n",num1.doubleValue(),sym[0], num2.doubleValue(), sym[1], num3.doubleValue(), big3(num1,num2,num3).doubleValue());
-                //System.out.printf("%.1f\n",big3(num1,num2,num3).doubleValue()); 
             }
             else if(countN==1){
                 BigDecimal num1 = new BigDecimal(num[0]);
                 BigDecimal num2 = new BigDecimal(num[1]);
-                //System.out.print(num1.doubleValue() + " " +  sym[0]+ " " + num2.doubleValue() + " = ");
                 System.out.printf("%.1f %c %.1f = %.1f\n",num1.doubleValue(),sym[0], num2.doubleValue(), big2(num1,num2).doubleValue());
-                //System.out.printf("%.1f\n",big2(num1,num2).doubleValue());
             }
             else{
                 System.out.printf("%.1f\n",Double.valueOf(num[0]));
-                //System.out.println(Double.valueOf(num[0]));
             }
         }
         
